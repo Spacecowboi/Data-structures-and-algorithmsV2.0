@@ -1,0 +1,1 @@
+Laptop about to die, see image
