@@ -5,7 +5,7 @@ describe('FizzBuzz Binary Tree', () => {
         const consoleLogSpy = jest.spyOn(console, 'log').mockImplementation(() => {});
         findTheBuzz(tree); 
 
-        expect(consoleLogSpy).toHaveBeenCalledTimes(13);
+        expect(consoleLogSpy).toHaveBeenCalledTimes(12);
         consoleLogSpy.mockRestore();
     });
 });

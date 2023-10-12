@@ -47,3 +47,9 @@ function findTheBuzz(node) {
 }
 
 findTheBuzz(tree);
+
+module.exports = {
+    fizzBuzz,
+    tree,
+    findTheBuzz
+};
