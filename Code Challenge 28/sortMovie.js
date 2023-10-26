@@ -2,10 +2,10 @@
 
 function sortByTitle(movies){
     const removeCP = (title) => {
-        const commonPrefix = ["A", "An", "The "];
+        const commonPrefix = ["A", "An", "The"];
         for (const prefix of commonPrefix) {
-            if(title.startsWith(prefix)) {
-                title = title.slice(prefix.length);
+            if(title.toLowerCase().startsWith(prefix.toLowerCase() + " ")) {
+                title = title.slice(prefix.length + 1);
                 break;
             }
         }
@@ -20,3 +20,5 @@ function sortByTitle(movies){
 
     return movies;
 }
+
+module.exports = {sortByTitle};
